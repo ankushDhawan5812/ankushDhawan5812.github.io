@@ -1,1 +1,1 @@
-This is the source code to Jon Barron's public academic website: https://jonbarron.info/. Feel free to clone this code for your own personal use.
+This is the source code to Ankush Dhawan's personal website. Template adapted from Jon Barron's site (https://jonbarron.info/). Feel free to clone this code for your own personal use.

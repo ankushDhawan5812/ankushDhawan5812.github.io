@@ -97,7 +97,7 @@
               <tr>
                 <td style="padding:16px;width:100%;vertical-align:middle">
                   <h3 style="color:#007acc;margin-bottom:20px;">Recent Updates</h3>
-                  <p>📝 <strong>July 2026:</strong> Our paper <u><a href="https://sprout-mitll.github.io/tip_mounts/" style="color: #007acc; text-decoration: none;">"Gotta Grow Fast: Design and Benchmarking of a Tip Mount for High-Speed Vine Robots"</a></u> was accepted to <strong>RA-L</strong>!</p>
+                  <p>📝 <strong>June 2026:</strong> Our paper <u><a href="https://sprout-mitll.github.io/tip_mounts/" style="color: #007acc; text-decoration: none;">"Gotta Grow Fast: Design and Benchmarking of a Tip Mount for High-Speed Vine Robots"</a></u> was accepted to <strong>RA-L</strong>!</p>
                   <p>📚 <strong>September 2025:</strong> I'm starting my PhD at <u>Stanford University</u>.</p>
                   <p>🔬 <strong>Summer 2025:</strong> I'll be working at <u><a href="https://opalcamera.com/?srsltid=AfmBOor5WIdXTrX_Xn_nWKcf4Vu2P7dACIgavp19TbamNqqaWzajnTNt" style="color: #007acc; text-decoration: none;">Opal Camera</a></u> as an R&D Engineer.</p>
                   <p>🤖 <strong>Summer 2024:</strong> I worked with Dr. Nathaniel Hanson and Prof. Margaret Coad at <u><a href="https://www.ll.mit.edu/r-d/projects/vine-robots-collapsed-structure-mapping?utm_source=linkedin&utm_medium=organic&utm_term=&utm_content=&utm_campaign=projects" style="color: #007acc; text-decoration: none;">MIT Lincoln Laboratory Humanitarian Resilience Technology Group (HuRT)</a></u> on vine robots for disaster response.</p>
@@ -115,20 +115,30 @@
                 <td style="padding:16px;width:100%;vertical-align:middle">
                   <h2>Publications</h2>
                   <p>
-                    I'm interested in robotics, tactile sensing, manipulation, and soft robotics. My work spans from hardware design to learning methodologies for robotic systems.
+                    I'm interested in robotics, tactile sensing, and dexterous manipulation. My work spans from hardware design to learning methodologies for robotic systems.
         </p>
       </td>
     </tr>
             </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-    <tr>
+    <tr onmouseout="camera_mount_stop()" onmouseover="camera_mount_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <video width="160" height="120" muted autoplay loop playsinline style="border-radius:4px;object-fit:cover;">
+          <div class="two" id='camera_mount_image'><video width=100% height=100% muted autoplay loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: 25% center;">
           <source src="images/camera_mount_vines.mp4" type="video/mp4">
-          </video>
+          </video></div>
+          <img src='images/camera_mount_splash.png' width="160">
         </div>
+        <script type="text/javascript">
+          function camera_mount_start() {
+            document.getElementById('camera_mount_image').style.opacity = "1";
+          }
+          function camera_mount_stop() {
+            document.getElementById('camera_mount_image').style.opacity = "0";
+          }
+          camera_mount_stop()
+        </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://sprout-mitll.github.io/tip_mounts/">

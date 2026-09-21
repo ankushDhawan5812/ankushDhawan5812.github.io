@@ -1,592 +1,339 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+  <meta charset="UTF-8">
+  <title>Ankush K. Dhawan</title>
+  <meta name="author" content="Ankush K. Dhawan">
+  <meta name="description" content="Ankush Dhawan is a PhD student in Robotics at Stanford University working on tactile sensing, dexterous manipulation, and soft robots for disaster response.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
 
-    <title>Ankush K. Dhawan</title>
+<body>
 
-    <meta name="author" content="Ankush K. Dhawan">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
-  </head>
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Ankush Dhawan</a>
+    <ul>
+      <li><a href="#news">News</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#patents">Patents</a></li>
+    </ul>
+  </div>
+</nav>
 
-  <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Ankush Dhawan
-                </p>
-                <p>
-                  Hello! My name is Ankush, and I am a first-year PhD student in Robotics at Stanford University. In my undergrad at Stanford, I worked with Prof. Monroe Kennedy III and Prof. Karen Liu on learning for manipulation and novel robotic hardware. Previously, I have worked with Dr. Nathaniel Hanson at the MIT Lincoln Laboratory Human Resilience and Technology Group on soft robotics for disaster response. I also have experience in industry, across companies small and large designing and testing a wide range of engineering products (Tesla, Opal Camera, Embark Trucks).                <p style="text-align:center">
-                  <a href="mailto:ankushd@stanford.edu">Email</a> &nbsp;/&nbsp;
-                  <a href="data/AnkushDhawan_CV.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=th__DRQAAAAJ&hl=en&oi=sra"> Google Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://www.linkedin.com/in/ankush-dhawan/">LinkedIn</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/ankushDhawan5812">Github</a>
-                </p>
-              </td>
-              <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/AnkushDhawan.png"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/AnkushDhawan.png" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
-          <!-- Navigation Tabs -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <div style="text-align:center; margin-bottom:30px;">
-                  <button onclick="toggleSection('highlights')" style="margin:6px; padding:8px 20px; background: linear-gradient(135deg, #007acc, #0056b3); color:white; border:none; cursor:pointer; border-radius:20px; font-size:13px; font-weight:500; text-transform:none; letter-spacing:0.3px; box-shadow: 0 3px 12px rgba(0, 122, 204, 0.3); transition: all 0.3s ease; transform: translateY(0);">Highlights</button>
-                  <button onclick="toggleSection('publications')" style="margin:6px; padding:8px 20px; background: linear-gradient(135deg, #f8f9fa, #e9ecef); color:#333; border:1px solid #dee2e6; cursor:pointer; border-radius:20px; font-size:13px; font-weight:500; text-transform:none; letter-spacing:0.3px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); transition: all 0.3s ease; transform: translateY(0);">Publications</button>
-                  <button onclick="toggleSection('teaching')" style="margin:6px; padding:8px 20px; background: linear-gradient(135deg, #f8f9fa, #e9ecef); color:#333; border:1px solid #dee2e6; cursor:pointer; border-radius:20px; font-size:13px; font-weight:500; text-transform:none; letter-spacing:0.3px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); transition: all 0.3s ease; transform: translateY(0);">Teaching</button>
-                  <button onclick="toggleSection('projects')" style="margin:6px; padding:8px 20px; background: linear-gradient(135deg, #f8f9fa, #e9ecef); color:#333; border:1px solid #dee2e6; cursor:pointer; border-radius:20px; font-size:13px; font-weight:500; text-transform:none; letter-spacing:0.3px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); transition: all 0.3s ease; transform: translateY(0);">Projects</button>
-                  <button onclick="toggleSection('patents')" style="margin:6px; padding:8px 20px; background: linear-gradient(135deg, #f8f9fa, #e9ecef); color:#333; border:1px solid #dee2e6; cursor:pointer; border-radius:20px; font-size:13px; font-weight:500; text-transform:none; letter-spacing:0.3px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); transition: all 0.3s ease; transform: translateY(0);">Patents</button>
-                </div>
-              </td>
-            </tr>
-          </tbody></table>
+<main id="top">
 
-           <!-- Could add projects section, - pupper hospital, amazon project thing, if i do conservation technology that too -->
-
-          
-
-          <!-- Highlights Section -->
-          <div id="highlights" style="display:block;">
-            <!-- Project Showcase Grid -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-                <!-- Dynamic Cloth Detection -->
-                <td style="padding:0px;width:33%;vertical-align:top;text-align:center;">
-                  <video width="100%" height="135" style="border-radius:8px;object-fit:cover;cursor:pointer;" autoplay muted loop onclick="window.open('https://arm.stanford.edu/research/robot-manipulation-dexterity/', '_blank')">
-                    <source src="images/cloth_detection_main.mp4" type="video/mp4">
-                  </video>
-                  <div style="padding:15px;">
-                    <h3 style="color:#007acc;margin-bottom:5px;">Dextrous Manipulation</h3>
-        </div>
-      </td>
-
-                <!-- Vine Robots -->
-                <td style="padding:0px;width:33%;vertical-align:top;text-align:center;">
-                  <video width="100%" height="135" style="border-radius:8px;object-fit:cover;cursor:pointer;" autoplay muted loop onclick="window.open('https://www.ll.mit.edu/r-d/projects/vine-robots-collapsed-structure-mapping?utm_source=linkedin&utm_medium=organic&utm_term=&utm_content=&utm_campaign=projects', '_blank')">
-                    <source src="images/vine_main.mp4" type="video/mp4">
-                  </video>
-                  <div style="padding:15px;">
-                    <h3 style="color:#007acc;margin-bottom:5px;">Disaster Response Robotics</h3>
-					</div>
-      </td>
-
-                <!-- Pupper Robot -->
-                <td style="padding:0px;width:33%;vertical-align:top;text-align:center;">
-                  <video width="100%" height="135" style="border-radius:8px;object-fit:cover;cursor:pointer;" autoplay muted loop onclick="toggleSection('teaching')">
-                    <source src="images/pupper_handshake.mp4" type="video/mp4">
-                  </video>
-                  <div style="padding:15px;">
-                    <h3 style="color:#007acc;margin-bottom:5px;">Educational Robotics</h3>
-        </div>
-      </td>
-    </tr>
-            </tbody></table>
-
-            <!-- Recent Updates Section -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:40px;"><tbody>
-              <tr>
-                <td style="padding:16px;width:100%;vertical-align:middle">
-                  <h3 style="color:#007acc;margin-bottom:20px;">Recent Updates</h3>
-                  <p>📝 <strong>June 2026:</strong> Our paper <u><a href="https://sprout-mitll.github.io/tip_mounts/" style="color: #007acc; text-decoration: none;">"Gotta Grow Fast: Design and Benchmarking of a Tip Mount for High-Speed Vine Robots"</a></u> was accepted to <strong>RA-L</strong>!</p>
-                  <p>📚 <strong>September 2025:</strong> I'm starting my PhD at <u>Stanford University</u>.</p>
-                  <p>🔬 <strong>Summer 2025:</strong> I'll be working at <u><a href="https://opalcamera.com/?srsltid=AfmBOor5WIdXTrX_Xn_nWKcf4Vu2P7dACIgavp19TbamNqqaWzajnTNt" style="color: #007acc; text-decoration: none;">Opal Camera</a></u> as an R&D Engineer.</p>
-                  <p>🤖 <strong>Summer 2024:</strong> I worked with Dr. Nathaniel Hanson and Prof. Margaret Coad at <u><a href="https://www.ll.mit.edu/r-d/projects/vine-robots-collapsed-structure-mapping?utm_source=linkedin&utm_medium=organic&utm_term=&utm_content=&utm_campaign=projects" style="color: #007acc; text-decoration: none;">MIT Lincoln Laboratory Humanitarian Resilience Technology Group (HuRT)</a></u> on vine robots for disaster response.</p>
-                  <p>🎓 <strong>June 2024:</strong> I graduated from <u>Stanford University</u> with a BS in Electrical Engineering.</p>
-                  <p>⚡ <strong>Summer 2023:</strong> I interned as a battery electronics design engineer at <u>Tesla</u>.</p>
-      </td>
-    </tr>
-            </tbody></table>
-        </div>
-
-          <!-- Publications Section -->
-          <div id="publications" style="display:none;">
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-                <td style="padding:16px;width:100%;vertical-align:middle">
-                  <h2>Publications</h2>
-                  <p>
-                    I'm interested in robotics, tactile sensing, and dexterous manipulation. My work spans from hardware design to learning methodologies for robotic systems.
-        </p>
-      </td>
-    </tr>
-            </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-    <tr onmouseout="camera_mount_stop()" onmouseover="camera_mount_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='camera_mount_image'><video width=100% height=100% muted autoplay loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: 25% center;">
-          <source src="images/camera_mount_vines.mp4" type="video/mp4">
-          </video></div>
-          <img src='images/camera_mount_splash.png' width="160">
-        </div>
-        <script type="text/javascript">
-          function camera_mount_start() {
-            document.getElementById('camera_mount_image').style.opacity = "1";
-          }
-          function camera_mount_stop() {
-            document.getElementById('camera_mount_image').style.opacity = "0";
-          }
-          camera_mount_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://sprout-mitll.github.io/tip_mounts/">
-          <span class="papertitle">Gotta Grow Fast: Design and Benchmarking of a Tip Mount for High-Speed Vine Robots</span>
-        </a>
-        <br>
-        Antonio Alvarez Valdivia,
-        Robert Reeve,
-        <strong>Ankush K. Dhawan</strong>,
-        Ciera McFarland,
-        Chad Council,
-        Margaret McGuinness,
-        Nathaniel Hanson
-        <br>
-        <em>IEEE Robotics and Automation Letters (RA-L)</em>, 2026
-        <br>
-        <a href="https://sprout-mitll.github.io/tip_mounts/">Website</a>
-        /
-        <a href="https://ieeexplore.ieee.org/document/11592424">Paper</a>
-        /
-        <a href="https://arxiv.org/abs/2606.06040">arXiv</a>
-        <p></p>
+  <!-- ================= Intro ================= -->
+  <section class="intro">
+    <div class="wrap cols">
+      <div class="text">
+        <h1>Ankush Dhawan</h1>
         <p>
-        A triangular roller tip mount that carries sensors and tools on soft vine robots growing through tip eversion, with a benchmarking testbed that characterizes how mounting approaches affect growth speed and internal resistance.
+          Hello! My name is Ankush, and I am a first-year PhD student in Robotics at Stanford University. In my undergrad at Stanford, I worked with Prof. Monroe Kennedy III and Prof. Karen Liu on learning for manipulation and novel robotic hardware. Previously, I worked with Dr. Nathaniel Hanson at the MIT Lincoln Laboratory Human Resilience and Technology Group on soft robotics for disaster response. I also have experience in industry, across companies small and large, designing and testing a wide range of engineering products (Tesla, Opal Camera, Embark Trucks).
         </p>
-      </td>
-    </tr>
-
-    <tr onmouseout="cloth_detection_stop()" onmouseover="cloth_detection_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='cloth_detection_image'><video width=100% height=100% muted autoplay loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
-          <source src="images/cloth_detection.mp4" type="video/mp4">
-          </video></div>
-          <img src='images/cloth_detection.png' width="160">
-        </div>
-        <script type="text/javascript">
-          function cloth_detection_start() {
-            document.getElementById('cloth_detection_image').style.opacity = "1";
-          }
-          function cloth_detection_stop() {
-            document.getElementById('cloth_detection_image').style.opacity = "0";
-          }
-          cloth_detection_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://arm.stanford.edu/dynamic-cloth-detection">
-          <span class="papertitle">Dynamic Layer Detection of a Thin Silk Cloth using DenseTact Optical Tactile Sensors</span>
-        </a>
-        <br>
-        <strong>Ankush K. Dhawan*</strong>,
-        Camille Chungyoun*,
-        Karina Ting*,
-        Monroe Kennedy III
-        <br>
-        <em>IROS</em>, 2025
-        <br>
-        <a href="https://arm.stanford.edu/dynamic-cloth-detection">Website</a>
-        /
-        <a href="https://www.youtube.com/watch?v=ha9h1Yhn9Jg">Video</a>
-        /
-        <a href="https://arxiv.org/abs/2409.09849">Paper</a>
-        <p></p>
-        <p>
-        Transformer-based cloth layer detection using DenseTact 2.0 optical tactile sensors. Achieves 98.21% accuracy in classifying grasped cloth layers through anthropomorphic rubbing motion.
-        </p>
-      </td>
-    </tr>
-
-    <tr onmouseout="vine_robot_stop()" onmouseover="vine_robot_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='vine_robot_image'><video width=100% height=100% muted autoplay loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
-          <source src="images/vine_robot.mp4" type="video/mp4">
-          </video></div>
-          <img src='images/vine_robot.png' width="160">
-        </div>
-        <script type="text/javascript">
-          function vine_robot_start() {
-            document.getElementById('vine_robot_image').style.opacity = "1";
-          }
-          function vine_robot_stop() {
-            document.getElementById('vine_robot_image').style.opacity = "0";
-          }
-          vine_robot_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://www.youtube.com/watch?v=Ld2ekNcbdu4">
-          <span class="papertitle">Field Insights for Portable Vine Robots in Urban Search and Rescue</span>
-        </a>
-        <br>
-        <strong>Ankush K. Dhawan*</strong>,
-        Ciera McFarland*,
-        Rhea Kumari,
-        Chad Council,
-        Margaret Coad,
-        Nathaniel Hanson
-        <br>
-        <em>SSRR</em>, 2024
-        <br>
-        <a href="https://www.youtube.com/watch?v=Ld2ekNcbdu4">Video</a>
-        /
-        <a href="https://doi.org/10.1109/SSRR62954.2024.10770046">Paper</a>
-        <p></p>
-        <p>
-        Experiments with the SPRoUT vine robot in engineered collapse structures for urban search and rescue scenarios. Tests viability, control, and sensorization of soft growing robots.
-        </p>
-      </td>
-    </tr>
-
-    <tr onmouseout="densetact_mini_stop()" onmouseover="densetact_mini_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='densetact_mini_image'><video width=100% height=100% muted autoplay loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
-          <source src="images/dt_mini.mp4" type="video/mp4">
-          </video></div>
-          <img src='images/dt_mini.png' width="160">
-        </div>
-        <script type="text/javascript">
-          function densetact_mini_start() {
-            document.getElementById('densetact_mini_image').style.opacity = "1";
-          }
-          function densetact_mini_stop() {
-            document.getElementById('densetact_mini_image').style.opacity = "0";
-          }
-          densetact_mini_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://sites.google.com/view/densetact-mini/">
-          <span class="papertitle">DenseTact-Mini: An Optical Tactile Sensor for Grasping Multi-Scale Objects From Flat Surfaces</span>
-        </a>
-        <br>
-        Won Kyung Do,
-        <strong>Ankush K. Dhawan</strong>,
-        Mathilda Kitzmann,
-        Monroe Kennedy III
-        <br>
-        <em>ICRA</em>, 2024 &nbsp <font color="red"><strong>(Best Paper Finalist)</strong></font>
-        <br>
-        <a href="https://sites.google.com/view/densetact-mini/">Website</a>
-        /
-        <a href="https://www.youtube.com/watch?v=Z4OtpI915GM">Video</a>
-        /
-        <a href="https://doi.org/10.1109/ICRA57147.2024.10610583">Paper</a>
-        <p></p>
-        <p>
-        Soft optical tactile fingertip enabling tap/rolling/fingernail grasping strategies. Demonstrates >90% success rate across small and thin objects including 1mm basil seeds and thin paperclips.
-        </p>
-      </td>
-    </tr>
-
-    <tr>
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <img src='images/lead_paper.png' width="160">
-        </div>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://www.sciencedirect.com/science/article/pii/S2405844018361462">
-          <span class="papertitle">Core-double shell composite for lead removal from aqueous solutions</span>
-        </a>
-        <br>
-        <strong>Ankush K. Dhawan</strong>,
-        Jeffery W. Seyler,
-        Brian C. Bohrer
-        <br>
-        <em>Heliyon</em>, 2019
-        <br>
-        <a href="https://www.sciencedirect.com/science/article/pii/S2405844018361462">Paper</a>
-        <p></p>
-        <p>
-        Development of a core-double shell composite consisting of sand base substrate with sequential layers of chitosan and graphene oxide for Pb(II) adsorption from aqueous solutions. The material achieved lead concentrations below EPA limit (<15 ppb), with adsorption characteristics following Freundlich isotherm model.
-        </p>
-      </td>
-    </tr>
-
-          </tbody></table>
-        </div>
-
-          <!-- Teaching Section -->
-          <div id="teaching" style="display:none;">
-            <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-    <!-- Story Header -->
-    <tr>
-      <td style="padding:8px 16px;width:100%;vertical-align:middle;text-align:left;">
-        <h3 style="margin-bottom: 10px; color: #333;">CS123: A Hands On Introduction to Building AI-Enabled Robots</h3>
-      </td>
-    </tr>
-
-    <!-- The Story -->
-    <tr>
-      <td style="padding:16px;width:100%;vertical-align:top;">
-          <p style="font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
-             With <a href="https://handsonrobotics.org/" style="color: #007acc; text-decoration: none;"><strong>Hands-On Robotics</strong></a> and Prof. Karen Liu, I have designed an undergraduate introductory AI robotics course, transforming a Robotics Club project into something much bigger. As Head Teaching Assistant over the past three years since the course's inception, I helped transform Pupper into an eductional platform in <a href="https://cs123-stanford.readthedocs.io/en/latest/" style="color: #007acc; text-decoration: none;"><strong>CS 123: A Hands-On Introduction to Building AI-Enabled Robots</strong></a>. We have also been featured by <a href="https://news.stanford.edu/stories/2025/07/ai-powered-robot-dogs-pupper-cs-123-robotics-students" style="color: #007acc; text-decoration: none;">Stanford report</a>.
-          </p>
-          
-          <!-- Video Preview -->
-          <div style="margin: 20px 0; text-align: center;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/3OHWCOOlAFw" title="CS123 Stanford Media Coverage" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
+        <ul class="links">
+          <li><a href="mailto:ankushd@stanford.edu"><i class="fa-solid fa-envelope"></i>Email</a></li>
+          <li><a href="data/AnkushDhawan_CV.pdf"><i class="fa-regular fa-file-lines"></i>CV</a></li>
+          <li><a href="https://scholar.google.com/citations?user=th__DRQAAAAJ&hl=en&oi=sra"><i class="ai ai-google-scholar"></i>Scholar</a></li>
+          <li><a href="https://www.linkedin.com/in/ankush-dhawan/"><i class="fa-brands fa-linkedin-in"></i>LinkedIn</a></li>
+          <li><a href="https://github.com/ankushDhawan5812"><i class="fa-brands fa-github"></i>GitHub</a></li>
+        </ul>
       </div>
-
-          
-        <p style="font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
-          The course teaches robotics fundamentals through hands-on construction and programming, covering motor control, kinematics, and walking algorithms. Students also explore cutting-edge topics in reinforcement learning, computer vision, and large language models for robotics. Each quarter culminates in a demo day where students showcase their projects to industry professionals. The course has now taught over 150 students, where each class culminates in a demo day where students showcase their projects to industry professionals and roboritcs researchers from academia. 
-      </p>
-    </td>
-  </tr>
-
-    <!-- Demo Day Showcase -->
-    <tr>
-      <td style="padding:16px;width:100%;vertical-align:middle;text-align:center;">
-        <h3 style="color: #007acc; margin-bottom: 20px;">Demo Day Evolution</h3>
-        <div style="position: relative; max-width: 600px; margin: 0 auto;">
-          <!-- Slideshow Container -->
-          <div class="slideshow-container" style="position: relative;">
-            <div class="slide" style="display: block;">
-              <img src="images/cs123_demo_day_fall_23.png" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px; background-color: white;">
-              <div style="text-align: center; margin-top: 10px; font-weight: bold;">Demo Day Fall 2023</div>
-      </div>
-            <div class="slide" style="display: none;">
-              <img src="images/cs123_demo_day_fall_24.png" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px; background-color: white;">
-              <div style="text-align: center; margin-top: 10px; font-weight: bold;">Demo Day Fall 2024</div>
-      </div>
-            <div class="slide" style="display: none;">
-              <img src="images/cs123_demo_day_sp25.png" style="width: 100%; height: 400px; object-fit: contain; border-radius: 8px; background-color: white;">
-              <div style="text-align: center; margin-top: 10px; font-weight: bold;">Demo Day Spring 2025</div>
-					</div>
-            
-            <!-- Navigation arrows -->
-            <a class="prev" onclick="changeSlide(-1)" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); cursor: pointer; font-size: 24px; color: #007acc; text-decoration: none; background: rgba(255,255,255,0.8); padding: 10px; border-radius: 50%;">❮</a>
-            <a class="next" onclick="changeSlide(1)" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); cursor: pointer; font-size: 24px; color: #007acc; text-decoration: none; background: rgba(255,255,255,0.8); padding: 10px; border-radius: 50%;">❯</a>
+      <img class="photo" src="images/AnkushDhawan.jpg" alt="Ankush Dhawan">
     </div>
-          
-          <!-- Dots indicator -->
-          <div style="text-align: center; margin-top: 15px;">
-            <span class="dot active" onclick="currentSlide(1)" style="height: 12px; width: 12px; margin: 0 5px; background-color: #007acc; border-radius: 50%; display: inline-block; cursor: pointer;"></span>
-            <span class="dot" onclick="currentSlide(2)" style="height: 12px; width: 12px; margin: 0 5px; background-color: #bbb; border-radius: 50%; display: inline-block; cursor: pointer;"></span>
-            <span class="dot" onclick="currentSlide(3)" style="height: 12px; width: 12px; margin: 0 5px; background-color: #bbb; border-radius: 50%; display: inline-block; cursor: pointer;"></span>
-        </div>
+  </section>
+
+  <!-- ================= Highlights ================= -->
+  <section id="highlights">
+    <div class="wrap">
+      <div class="cards">
+        <a class="card" href="#publications">
+          <video autoplay muted loop playsinline poster="images/cloth_detection.jpg">
+            <source src="images/cloth_detection_main.mp4" type="video/mp4">
+          </video>
+          <div class="body">
+            <h3>Dexterous Manipulation</h3>
+            <p>Tactile sensing and learning for fine manipulation.</p>
           </div>
-        </td>
-      </tr>
-      
-    <!-- ENGR108 Section -->
-    <tr>
-      <td style="padding:16px;width:100%;vertical-align:top;">
-        <h3 style="color: #007acc; margin-bottom: 15px;">ENGR108: Introduction to Matrix Methods</h3>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:8px;width:30%;vertical-align:top">
-              <img src='images/matrix_methods.png' width="240" style="border-radius: 4px;">
-        </td>
-            <td style="padding:8px;width:70%;vertical-align:top">
-              <p style="font-size: 16px; line-height: 1.6; margin-bottom: 15px;">
-                <strong>Teaching Assistant</strong> — Stanford University
-                <br>
-                <em>Teaching students from Freshmen through Graduate level</em>
-              </p>
-              <p style="font-size: 16px; line-height: 1.6; margin-bottom: 0;">
-                ENGR108 covers the fundamentals of vectors and matrices, solving linear equations, least-squares methods, and their applications. The course emphasizes practical implementation using Julia programming language, with applications spanning tomography, image processing, data fitting, time series prediction, and finance.
-          </p>
-        </td>
-      </tr>
-        </tbody></table>
-        </td>
-      </tr>
-      
-            </tbody></table>
+        </a>
+        <a class="card" href="https://www.ll.mit.edu/r-d/projects/vine-robots-collapsed-structure-mapping" target="_blank" rel="noopener">
+          <video autoplay muted loop playsinline poster="images/vine_robot.jpg">
+            <source src="images/vine_main.mp4" type="video/mp4">
+          </video>
+          <div class="body">
+            <h3>Disaster Response Robotics</h3>
+            <p>Soft growing vine robots for search and rescue.</p>
+          </div>
+        </a>
+        <a class="card" href="#teaching">
+          <video autoplay muted loop playsinline>
+            <source src="images/pupper_handshake.mp4" type="video/mp4">
+          </video>
+          <div class="body">
+            <h3>Educational Robotics</h3>
+            <p>Pupper and CS 123 at Stanford.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= News ================= -->
+  <section id="news">
+    <div class="wrap">
+      <h2>News</h2>
+      <ul class="news">
+        <li><time>June 2026</time><span>Our paper <a href="https://sprout-mitll.github.io/tip_mounts/">Gotta Grow Fast: Design and Benchmarking of a Tip Mount for High-Speed Vine Robots</a> was accepted to <strong>RA-L</strong>.</span></li>
+        <li><time>September 2025</time><span>I'm starting my PhD in Robotics at Stanford University.</span></li>
+        <li><time>Summer 2025</time><span>Working at <a href="https://opalcamera.com/">Opal Camera</a> as an R&amp;D Engineer.</span></li>
+        <li><time>Summer 2024</time><span>Worked with Dr. Nathaniel Hanson and Prof. Margaret Coad at the <a href="https://www.ll.mit.edu/r-d/projects/vine-robots-collapsed-structure-mapping">MIT Lincoln Laboratory Humanitarian Resilience Technology Group (HuRT)</a> on vine robots for disaster response.</span></li>
+        <li><time>June 2024</time><span>Graduated from Stanford University with a BS in Electrical Engineering.</span></li>
+        <li><time>Summer 2023</time><span>Interned as a battery electronics design engineer at Tesla.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= Publications ================= -->
+  <section id="publications">
+    <div class="wrap">
+      <h2>Publications</h2>
+      <p class="muted">I'm interested in robotics, tactile sensing, and dexterous manipulation. My work spans from hardware design to learning methodologies for robotic systems.</p>
+
+      <article class="pub">
+        <div class="thumb">
+          <img src="images/camera_mount_splash.jpg" alt="Tip mount for high-speed vine robots">
+          <video muted loop playsinline preload="none" style="object-position: 25% center;">
+            <source src="images/camera_mount_vines.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="meta">
+          <a class="title" href="https://sprout-mitll.github.io/tip_mounts/">Gotta Grow Fast: Design and Benchmarking of a Tip Mount for High-Speed Vine Robots</a>
+          <div class="authors">Antonio Alvarez Valdivia, Robert Reeve, <span class="me">Ankush K. Dhawan</span>, Ciera McFarland, Chad Council, Margaret McGuinness, Nathaniel Hanson</div>
+          <div class="venue"><em>IEEE Robotics and Automation Letters (RA-L)</em>, 2026</div>
+          <div class="actions">
+            <a href="https://sprout-mitll.github.io/tip_mounts/">Website</a>
+            <a href="https://ieeexplore.ieee.org/document/11592424">Paper</a>
+            <a href="https://arxiv.org/abs/2606.06040">arXiv</a>
+          </div>
+          <p class="desc">A triangular roller tip mount that carries sensors and tools on soft vine robots growing through tip eversion, with a benchmarking testbed that characterizes how mounting approaches affect growth speed and internal resistance.</p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="thumb">
+          <img src="images/cloth_detection.jpg" alt="Cloth layer detection with DenseTact sensors">
+          <video muted loop playsinline preload="none">
+            <source src="images/cloth_detection.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="meta">
+          <a class="title" href="https://arm.stanford.edu/dynamic-cloth-detection">Dynamic Layer Detection of a Thin Silk Cloth using DenseTact Optical Tactile Sensors</a>
+          <div class="authors"><span class="me">Ankush K. Dhawan*</span>, Camille Chungyoun*, Karina Ting*, Monroe Kennedy III</div>
+          <div class="venue"><em>IROS</em>, 2025</div>
+          <div class="actions">
+            <a href="https://arm.stanford.edu/dynamic-cloth-detection">Website</a>
+            <a href="https://www.youtube.com/watch?v=ha9h1Yhn9Jg">Video</a>
+            <a href="https://arxiv.org/abs/2409.09849">Paper</a>
+          </div>
+          <p class="desc">Transformer-based cloth layer detection using DenseTact 2.0 optical tactile sensors. Achieves 98.21% accuracy in classifying grasped cloth layers through anthropomorphic rubbing motion.</p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="thumb">
+          <img src="images/vine_robot.jpg" alt="SPRoUT vine robot in a collapsed structure">
+          <video muted loop playsinline preload="none">
+            <source src="images/vine_robot.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="meta">
+          <a class="title" href="https://www.youtube.com/watch?v=Ld2ekNcbdu4">Field Insights for Portable Vine Robots in Urban Search and Rescue</a>
+          <div class="authors"><span class="me">Ankush K. Dhawan*</span>, Ciera McFarland*, Rhea Kumari, Chad Council, Margaret Coad, Nathaniel Hanson</div>
+          <div class="venue"><em>SSRR</em>, 2024</div>
+          <div class="actions">
+            <a href="https://www.youtube.com/watch?v=Ld2ekNcbdu4">Video</a>
+            <a href="https://doi.org/10.1109/SSRR62954.2024.10770046">Paper</a>
+          </div>
+          <p class="desc">Experiments with the SPRoUT vine robot in engineered collapse structures for urban search and rescue scenarios. Tests viability, control, and sensorization of soft growing robots.</p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="thumb">
+          <img src="images/dt_mini.jpg" alt="DenseTact-Mini tactile sensor">
+          <video muted loop playsinline preload="none">
+            <source src="images/dt_mini.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="meta">
+          <a class="title" href="https://sites.google.com/view/densetact-mini/">DenseTact-Mini: An Optical Tactile Sensor for Grasping Multi-Scale Objects From Flat Surfaces</a>
+          <div class="authors">Won Kyung Do, <span class="me">Ankush K. Dhawan</span>, Mathilda Kitzmann, Monroe Kennedy III</div>
+          <div class="venue"><em>ICRA</em>, 2024 <span class="badge">Best Paper Finalist</span></div>
+          <div class="actions">
+            <a href="https://sites.google.com/view/densetact-mini/">Website</a>
+            <a href="https://www.youtube.com/watch?v=Z4OtpI915GM">Video</a>
+            <a href="https://doi.org/10.1109/ICRA57147.2024.10610583">Paper</a>
+          </div>
+          <p class="desc">Soft optical tactile fingertip enabling tap, rolling, and fingernail grasping strategies. Demonstrates &gt;90% success rate across small and thin objects including 1&nbsp;mm basil seeds and thin paperclips.</p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="thumb">
+          <img src="images/lead_paper.jpg" alt="Core-double shell composite for lead removal">
+        </div>
+        <div class="meta">
+          <a class="title" href="https://www.sciencedirect.com/science/article/pii/S2405844018361462">Core-double shell composite for lead removal from aqueous solutions</a>
+          <div class="authors"><span class="me">Ankush K. Dhawan</span>, Jeffery W. Seyler, Brian C. Bohrer</div>
+          <div class="venue"><em>Heliyon</em>, 2019</div>
+          <div class="actions">
+            <a href="https://www.sciencedirect.com/science/article/pii/S2405844018361462">Paper</a>
+          </div>
+          <p class="desc">A core-double shell composite consisting of a sand base substrate with sequential layers of chitosan and graphene oxide for Pb(II) adsorption from aqueous solutions. The material achieved lead concentrations below the EPA limit (&lt;15 ppb), with adsorption characteristics following the Freundlich isotherm model.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= Teaching ================= -->
+  <section id="teaching">
+    <div class="wrap">
+      <h2>Teaching</h2>
+
+      <div class="entry">
+        <h3>CS 123: A Hands-On Introduction to Building AI-Enabled Robots</h3>
+        <div class="sub">Head Teaching Assistant, Stanford University</div>
+        <p>
+          With <a href="https://handsonrobotics.org/">Hands-On Robotics</a> and Prof. Karen Liu, I have designed an undergraduate introductory AI robotics course, transforming a Robotics Club project into something much bigger. As Head Teaching Assistant over the past three years since the course's inception, I helped transform Pupper into an educational platform in <a href="https://cs123-stanford.readthedocs.io/en/latest/">CS 123: A Hands-On Introduction to Building AI-Enabled Robots</a>. We have also been featured by the <a href="https://news.stanford.edu/stories/2025/07/ai-powered-robot-dogs-pupper-cs-123-robotics-students">Stanford Report</a>.
+        </p>
+        <div class="embed">
+          <iframe src="https://www.youtube.com/embed/3OHWCOOlAFw" title="CS123 Stanford Media Coverage" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p>
+          The course teaches robotics fundamentals through hands-on construction and programming, covering motor control, kinematics, and walking algorithms. Students also explore cutting-edge topics in reinforcement learning, computer vision, and large language models for robotics. The course has now taught over 150 students, and each quarter culminates in a demo day where students showcase their projects to industry professionals and robotics researchers from academia.
+        </p>
+        <div class="gallery">
+          <figure><img src="images/cs123_demo_day_fall_23.jpg" alt="CS 123 Demo Day, Fall 2023" loading="lazy"><figcaption>Demo Day, Fall 2023</figcaption></figure>
+          <figure><img src="images/cs123_demo_day_fall_24.jpg" alt="CS 123 Demo Day, Fall 2024" loading="lazy"><figcaption>Demo Day, Fall 2024</figcaption></figure>
+          <figure><img src="images/cs123_demo_day_sp25.jpg" alt="CS 123 Demo Day, Spring 2025" loading="lazy"><figcaption>Demo Day, Spring 2025</figcaption></figure>
+        </div>
       </div>
 
-          <!-- Projects Section -->
-          <div id="projects" style="display:none;">
-            <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-                <td style="padding:16px;width:100%;vertical-align:top;">
-                  <h3 style="margin-bottom: 10px; color: #333;">Dr. Pupper: Social Companion Robots for Immunocompromised Pedatric Patients in Hospitals</h3>
-                  <p style="font-size: 16px; line-height: 1.6; margin-bottom: 16px;">
-                    Partnering with <a href="https://www.stanfordchildrens.org/en.html" style="color: #007acc; text-decoration: none;">Stanford Children's Hospital</a> and Dr. Teresa Nguyen, I have helped start an initiative called <a href="https://med.stanford.edu/drpupper/about.html" style="color: #007acc; text-decoration: none;">Dr. Pupper</a> to help pediatric patients with the psychosocial impacts of hospitalization. Our work has been featured by <a href="https://abc7.com/post/stanford-university-robotic-puppies-hospital-patients/14762540/" style="color: #007acc; text-decoration: none;">ABC</a> and <a href="https://www.youtube.com/live/6BVQGOm6NU0?t=24s" style="color: #007acc; text-decoration: none;">Univision</a>. Below are some results from a project done in collaboration with students from UCSF.
-                  </p>
-                  <div style="margin: 20px 0; text-align: center;">
-                    <object data="data/pupper_nursing_poster.pdf" type="application/pdf" width="100%" height="700" style="max-width: 100%; border: 1px solid #e9ecef; border-radius: 8px;">
-                      <embed src="data/pupper_nursing_poster.pdf" type="application/pdf" width="100%" height="700" />
-                      <p style="margin: 12px 0;">PDF preview unavailable in your browser. <a href="data/pupper_nursing_poster.pdf" style="color:#007acc; text-decoration:none;">Open poster PDF</a></p>
-                    </object>
-                    <div style="margin-top:10px;">
-                      <a href="data/pupper_nursing_poster.pdf" style="color:#007acc; text-decoration:none;">Open poster PDF</a>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-            </tbody></table>
-
-            <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-                <td style="padding:16px;width:100%;vertical-align:top;">
-                  <h3 style="margin-bottom: 10px; color: #333;">Stanford Bhangra Team</h3>
-                  <p style="font-size: 16px; line-height: 1.6; margin-bottom: 16px;">
-                    Outside of my research and project work, I enjoy dancing, and have been dancing with the Stanford Bhangra team since my freshmen year. In my senior year, I captained the team, creating choreography and fostering the community. We perform at competitions all across the nation, recently at UC Santa Barbara, Purdue University, and University of Maryland. Check out our feature in the <a href="https://stanforddaily.com/2023/09/27/stanford-bhangra-dhol-s-out-community/" style="color: #007acc; text-decoration: none;">Stanford Daily</a>. Here is a performance at Blacksburg Ki Badmashi at Virginia Tech in 2024 (much of this is my choreo, I'm in blue!).
-                  </p>
-                  <div style="margin: 20px 0; text-align: center;">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/W_Z_XWRJKR8" title="Stanford Bhangra Team Performance at Virginia Tech 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-                  </div>
-                </td>
-              </tr>
-            </tbody></table>
-          </div>
-
-          <!-- Patents Section -->
-          <div id="patents" style="display:none;">
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-                <td style="padding:16px;width:100%;vertical-align:middle">
-                  <h2>Patents</h2>
-                  <p>
-                    I have developed innovative solutions for environmental testing and sustainable energy systems, resulting in multiple patents for practical applications.
-      </p>
-    </td>
-  </tr>
-            </tbody></table>
-            <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-    <tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <div class="one">
-          <img src='images/arsenic_detection.png' width="160">
+      <div class="entry">
+        <h3>ENGR 108: Introduction to Matrix Methods</h3>
+        <div class="sub">Teaching Assistant, Stanford University &middot; Students from freshman through graduate level</div>
+        <div class="side">
+          <img src="images/matrix_methods.jpg" alt="ENGR 108 matrix methods" loading="lazy">
+          <p>ENGR 108 covers the fundamentals of vectors and matrices, solving linear equations, least-squares methods, and their applications. The course emphasizes practical implementation using the Julia programming language, with applications spanning tomography, image processing, data fitting, time series prediction, and finance.</p>
+        </div>
+      </div>
     </div>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://patents.google.com/patent/US11022557B2/en">
-          <span class="papertitle">Test Kit for Detecting Arsenic</span>
-    </a>
-    <br>
-        <strong>Ankush K. Dhawan</strong>,
-        Jeffery William Seyler, Sr.
-        <br>
-        <em>USPTO Patent No. 11,022,557 B2</em> — Issued June 1, 2021
-        <br>
-        <a href="https://patents.google.com/patent/US11022557B2/en">patent</a>
-                <p></p>
-                <p>
-        A test kit for detecting trace levels of arsenic in water samples using a stable bromide compound, dye, and acid solution. Capable of detecting concentrations up to 0.03 parts per million with accuracy and repeatability, meeting US EPA and WHO standards for potable water testing.
-                </p>
-              </td>
-            </tr>		
-            
-    <tr>
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <div class="one">
-          <img src='images/microbial_fuel_cell.png' width="160">
-                </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://patents.google.com/patent/US20170214076A1/en">
-          <span class="papertitle">Microbial Fuel Cell Light Assembly</span>
-                </a>
-                <br>
-        <strong>Ankush K. Dhawan</strong>
-        <br>
-        <em>USPTO Patent Application Pub. No. US 2017/0214076 A1</em> — Filed June 27, 2017
-        <br>
-        <a href="https://patents.google.com/patent/US20170214076A1/en">patent</a>
-                <p></p>
-                <p>
-        A microbial fuel cell light assembly that generates electricity through microbial activity, providing sustainable lighting solutions for various applications. This innovative system harnesses biological processes to create clean energy.
-                </p>
-              </td>
-            </tr>		
+  </section>
 
-            </tbody></table>
-            </div>
+  <!-- ================= Projects ================= -->
+  <section id="projects">
+    <div class="wrap">
+      <h2>Projects</h2>
 
+      <div class="entry">
+        <h3>Dr. Pupper: Social Companion Robots for Immunocompromised Pediatric Patients</h3>
+        <p>
+          Partnering with <a href="https://www.stanfordchildrens.org/en.html">Stanford Children's Hospital</a> and Dr. Teresa Nguyen, I have helped start an initiative called <a href="https://med.stanford.edu/drpupper/about.html">Dr. Pupper</a> to help pediatric patients with the psychosocial impacts of hospitalization. Our work has been featured by <a href="https://abc7.com/post/stanford-university-robotic-puppies-hospital-patients/14762540/">ABC</a> and <a href="https://www.youtube.com/live/6BVQGOm6NU0?t=24s">Univision</a>. Below are some results from a project done in collaboration with students from UCSF.
+        </p>
+        <a class="poster" href="data/pupper_nursing_poster.pdf" target="_blank" rel="noopener">
+          <img src="images/pupper_poster_thumb.jpg" alt="Dr. Pupper nursing study poster" loading="lazy">
+          <span>Open the poster (PDF) <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </a>
+      </div>
 
-          <!-- Attribution -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle;text-align:center;color:#777;">
-                Template adapted from <a href="https://jonbarron.info/">Jon Barron</a>.
-              </td>
-            </tr>
-          </tbody></table>
+      <div class="entry">
+        <h3>Stanford Bhangra Team</h3>
+        <p>
+          Outside of my research and project work, I enjoy dancing, and have been dancing with the Stanford Bhangra team since my freshman year. In my senior year, I captained the team, creating choreography and fostering the community. We perform at competitions all across the nation, recently at UC Santa Barbara, Purdue University, and University of Maryland. Check out our feature in the <a href="https://stanforddaily.com/2023/09/27/stanford-bhangra-dhol-s-out-community/">Stanford Daily</a>. Here is a performance at Blacksburg Ki Badmashi at Virginia Tech in 2024 (much of this is my choreo, I'm in blue!).
+        </p>
+        <div class="embed">
+          <iframe src="https://www.youtube.com/embed/W_Z_XWRJKR8" title="Stanford Bhangra Team Performance at Virginia Tech 2024" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
 
-              </td>
-            </tr>
-    </tbody></table>
+  <!-- ================= Patents ================= -->
+  <section id="patents">
+    <div class="wrap">
+      <h2>Patents</h2>
+      <p class="muted">Solutions for environmental testing and sustainable energy systems, resulting in patents for practical applications.</p>
 
-    <script>
-      function toggleSection(sectionName) {
-        // Hide all sections
-        document.getElementById('highlights').style.display = 'none';
-        document.getElementById('projects').style.display = 'none';
-        document.getElementById('publications').style.display = 'none';
-        document.getElementById('teaching').style.display = 'none';
-        document.getElementById('patents').style.display = 'none';
-        
-        // Show selected section
-        document.getElementById(sectionName).style.display = 'block';
-        
-        // Update button styles - reset all to inactive state
-        const buttons = document.querySelectorAll('button');
-        buttons.forEach(button => {
-          button.style.background = 'linear-gradient(135deg, #f8f9fa, #e9ecef)';
-          button.style.color = '#333';
-          button.style.border = '1px solid #dee2e6';
-          button.style.boxShadow = '0 2px 6px rgba(0,0,0,0.1)';
-          button.style.transform = 'translateY(0)';
-        });
-        
-        // Highlight active button
-        event.target.style.background = 'linear-gradient(135deg, #007acc, #0056b3)';
-        event.target.style.color = '#fff';
-        event.target.style.border = 'none';
-        event.target.style.boxShadow = '0 3px 12px rgba(0, 122, 204, 0.3)';
-        event.target.style.transform = 'translateY(-1px)';
-      }
+      <article class="pub">
+        <div class="thumb">
+          <img src="images/arsenic_detection.jpg" alt="Arsenic test kit" loading="lazy">
+        </div>
+        <div class="meta">
+          <a class="title" href="https://patents.google.com/patent/US11022557B2/en">Test Kit for Detecting Arsenic</a>
+          <div class="authors"><span class="me">Ankush K. Dhawan</span>, Jeffery William Seyler, Sr.</div>
+          <div class="venue"><em>USPTO Patent No. 11,022,557 B2</em> &middot; Issued June 1, 2021</div>
+          <div class="actions">
+            <a href="https://patents.google.com/patent/US11022557B2/en">Patent</a>
+          </div>
+          <p class="desc">A test kit for detecting trace levels of arsenic in water samples using a stable bromide compound, dye, and acid solution. Capable of detecting concentrations up to 0.03 parts per million with accuracy and repeatability, meeting US EPA and WHO standards for potable water testing.</p>
+        </div>
+      </article>
 
-      // Slideshow functionality
-      let slideIndex = 1;
+      <article class="pub">
+        <div class="thumb">
+          <img src="images/microbial_fuel_cell.jpg" alt="Microbial fuel cell light assembly" loading="lazy">
+        </div>
+        <div class="meta">
+          <a class="title" href="https://patents.google.com/patent/US20170214076A1/en">Microbial Fuel Cell Light Assembly</a>
+          <div class="authors"><span class="me">Ankush K. Dhawan</span></div>
+          <div class="venue"><em>USPTO Patent Application Pub. No. US 2017/0214076 A1</em> &middot; Filed June 27, 2017</div>
+          <div class="actions">
+            <a href="https://patents.google.com/patent/US20170214076A1/en">Patent</a>
+          </div>
+          <p class="desc">A microbial fuel cell light assembly that generates electricity through microbial activity, providing sustainable lighting for a range of applications by harnessing biological processes to create clean energy.</p>
+        </div>
+      </article>
+    </div>
+  </section>
 
-      function changeSlide(n) {
-        showSlide(slideIndex += n);
-      }
+</main>
 
-      function currentSlide(n) {
-        showSlide(slideIndex = n);
-      }
+<footer>
+  <div class="wrap">Layout inspired by <a href="https://jonbarron.info/">Jon Barron</a>'s template.</div>
+</footer>
 
-      function showSlide(n) {
-        const slides = document.querySelectorAll('.slide');
-        const dots = document.querySelectorAll('.dot');
-        
-        if (n > slides.length) { slideIndex = 1; }
-        if (n < 1) { slideIndex = slides.length; }
-        
-        slides.forEach(slide => slide.style.display = 'none');
-        dots.forEach(dot => dot.style.backgroundColor = '#bbb');
-        
-        slides[slideIndex - 1].style.display = 'block';
-        dots[slideIndex - 1].style.backgroundColor = '#007acc';
-      }
+<script>
+  // Nudge the highlight videos in browsers that defer muted autoplay.
+  document.querySelectorAll('.card video').forEach(function (v) {
+    var p = v.play();
+    if (p && p.catch) p.catch(function () {});
+  });
 
-      // Auto-advance slideshow every 5 seconds
-      setInterval(function() {
-        changeSlide(1);
-      }, 5000);
-        </script>
-  </body>
+  // Play publication preview videos on hover; keep the static image otherwise.
+  document.querySelectorAll('.thumb').forEach(function (thumb) {
+    var video = thumb.querySelector('video');
+    if (!video) return;
+    var pub = thumb.closest('.pub');
+    pub.addEventListener('mouseenter', function () {
+      thumb.classList.add('playing');
+      var p = video.play();
+      if (p && p.catch) p.catch(function () {});
+    });
+    pub.addEventListener('mouseleave', function () {
+      thumb.classList.remove('playing');
+      video.pause();
+    });
+  });
+</script>
+
+</body>
 </html>

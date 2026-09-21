@@ -312,6 +312,19 @@
 </footer>
 
 <script>
+  // Show the name in the sticky bar only after the intro heading scrolls out of view.
+  (function () {
+    var nav = document.querySelector('.nav');
+    var heading = document.querySelector('.intro h1');
+    if (!nav || !heading) return;
+    function update() {
+      nav.classList.toggle('scrolled', heading.getBoundingClientRect().bottom < nav.offsetHeight);
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  })();
+
   // Nudge the highlight videos in browsers that defer muted autoplay.
   document.querySelectorAll('.card video').forEach(function (v) {
     var p = v.play();

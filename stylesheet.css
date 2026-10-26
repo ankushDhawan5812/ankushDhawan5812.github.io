@@ -103,10 +103,11 @@ section { padding: 44px 0 8px; }
 .pub { display: flex; gap: 24px; padding: 22px 0; border-bottom: 1px solid var(--line); }
 .pub:last-child { border-bottom: 0; }
 .thumb {
-  position: relative; flex: 0 0 220px; width: 220px; aspect-ratio: 4 / 3;
+  position: relative; flex: 0 0 260px; width: 260px; aspect-ratio: 16 / 9; align-self: flex-start;
   border-radius: 8px; overflow: hidden; background: #eee; border: 1px solid var(--line);
 }
 .thumb img, .thumb video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.thumb img { object-fit: contain; background: #fff; }
 .thumb video { opacity: 0; transition: opacity .25s ease; }
 .thumb.playing video { opacity: 1; }
 .pub .meta { flex: 1; min-width: 0; }

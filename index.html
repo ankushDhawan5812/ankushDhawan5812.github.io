@@ -46,6 +46,7 @@
           <li><a href="https://scholar.google.com/citations?user=th__DRQAAAAJ&hl=en&oi=sra"><i class="ai ai-google-scholar"></i>Scholar</a></li>
           <li><a href="https://www.linkedin.com/in/ankush-dhawan/"><i class="fa-brands fa-linkedin-in"></i>LinkedIn</a></li>
           <li><a href="https://github.com/ankushDhawan5812"><i class="fa-brands fa-github"></i>GitHub</a></li>
+          <li><a href="https://x.com/ankushd5812"><i class="fa-brands fa-x-twitter"></i>X</a></li>
         </ul>
       </div>
       <img class="photo" src="images/AnkushDhawan.jpg" alt="Ankush Dhawan">
@@ -112,9 +113,8 @@
 
       <article class="pub">
         <div class="thumb">
-          <img src="images/real2sem2real.jpg" alt="xArm7 placing an unseen red mug on an unseen teal coffee machine">
-          <video muted loop playsinline preload="none">
-            <source src="images/real2sem2real.mp4" type="video/mp4">
+          <video muted loop playsinline preload="none" poster="images/pubs/real2sem2real.jpg" aria-label="Mug tracked in the human video, nine parallel simulated environments, and the real robot placing an unseen mug">
+            <source src="images/pubs/real2sem2real.mp4" type="video/mp4">
           </video>
         </div>
         <div class="meta">
@@ -124,6 +124,7 @@
           <div class="actions">
             <a href="https://real2sem2real.github.io/">Website</a>
             <a href="https://arxiv.org/abs/2610.28880">arXiv</a>
+            <a href="https://x.com/ankushd5812/status/2114797788378841432">X Post</a>
           </div>
           <p class="desc">Turns one monocular RGB video of a human demonstration into thousands of simulated robot demonstrations across objects of the same semantic category, using DINOv3-distilled Gaussian splat tracking and digital-cousin alignment. Policies trained on a single human video per task match or exceed teleoperation-trained policies on two robots and four tasks.</p>
         </div>
@@ -131,9 +132,8 @@
 
       <article class="pub">
         <div class="thumb">
-          <img src="images/vistacalign.jpg" alt="Robot hand lifting a power drill with a VisTacAlign co-trained policy">
-          <video muted loop playsinline preload="none">
-            <source src="images/vistacalign.mp4" type="video/mp4">
+          <video muted loop playsinline preload="none" poster="images/pubs/vistacalign.jpg" aria-label="Robot hand lifting a power drill with a VisTacAlign co-trained policy">
+            <source src="images/pubs/vistacalign.mp4" type="video/mp4">
           </video>
         </div>
         <div class="meta">
@@ -143,6 +143,7 @@
           <div class="actions">
             <a href="https://vis-tac-align.github.io/">Website</a>
             <a href="https://arxiv.org/abs/2609.30959">arXiv</a>
+            <a href="https://x.com/ankushd5812/status/2107158127816888795">X Post</a>
           </div>
           <p class="desc">Aligns human demonstrations from a capacitive tactile glove with robot data across vision, touch, and kinematics to co-train a visuotactile diffusion policy. Adding aligned human demos lifts Lego assembly success from 10% to 80% and enables strawberry plucking across all fruit sizes.</p>
         </div>
@@ -150,9 +151,8 @@
 
       <article class="pub">
         <div class="thumb">
-          <img src="images/camera_mount_splash.jpg" alt="Tip mount for high-speed vine robots">
-          <video muted loop playsinline preload="none" style="object-position: 25% center;">
-            <source src="images/camera_mount_vines.mp4" type="video/mp4">
+          <video muted loop playsinline preload="none" poster="images/pubs/tip_mount.jpg" aria-label="Vine robot with the tip mount growing across a gap, through a wall, and around bends">
+            <source src="images/pubs/tip_mount.mp4" type="video/mp4">
           </video>
         </div>
         <div class="meta">
@@ -170,9 +170,8 @@
 
       <article class="pub">
         <div class="thumb">
-          <img src="images/cloth_detection.jpg" alt="Cloth layer detection with DenseTact sensors">
-          <video muted loop playsinline preload="none">
-            <source src="images/cloth_detection.mp4" type="video/mp4">
+          <video muted loop playsinline preload="none" poster="images/pubs/cloth_layers.jpg" aria-label="DenseTact fingertips grasping and rubbing a thin silk cloth">
+            <source src="images/pubs/cloth_layers.mp4" type="video/mp4">
           </video>
         </div>
         <div class="meta">
@@ -190,9 +189,8 @@
 
       <article class="pub">
         <div class="thumb">
-          <img src="images/vine_robot.jpg" alt="SPRoUT vine robot in a collapsed structure">
-          <video muted loop playsinline preload="none">
-            <source src="images/vine_robot.mp4" type="video/mp4">
+          <video muted loop playsinline preload="none" poster="images/pubs/vine_field.jpg" aria-label="SPRoUT vine robot growing into a collapsed structure">
+            <source src="images/pubs/vine_field.mp4" type="video/mp4">
           </video>
         </div>
         <div class="meta">
@@ -209,9 +207,8 @@
 
       <article class="pub">
         <div class="thumb">
-          <img src="images/dt_mini.jpg" alt="DenseTact-Mini tactile sensor">
-          <video muted loop playsinline preload="none">
-            <source src="images/dt_mini.mp4" type="video/mp4">
+          <video muted loop playsinline preload="none" poster="images/pubs/densetact_mini.jpg" aria-label="DenseTact-Mini fingertip grasping small objects from a flat surface">
+            <source src="images/pubs/densetact_mini.mp4" type="video/mp4">
           </video>
         </div>
         <div class="meta">
@@ -371,21 +368,28 @@
     if (p && p.catch) p.catch(function () {});
   });
 
-  // Play publication preview videos on hover; keep the static image otherwise.
-  document.querySelectorAll('.thumb').forEach(function (thumb) {
-    var video = thumb.querySelector('video');
-    if (!video) return;
-    var pub = thumb.closest('.pub');
-    pub.addEventListener('mouseenter', function () {
-      thumb.classList.add('playing');
-      var p = video.play();
+  // Loop publication videos while they are on screen; pause them once scrolled away.
+  // With reduced motion requested, leave the poster frame up instead.
+  (function () {
+    var videos = document.querySelectorAll('.thumb video');
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    function play(v) {
+      v.muted = true;
+      var p = v.play();
       if (p && p.catch) p.catch(function () {});
-    });
-    pub.addEventListener('mouseleave', function () {
-      thumb.classList.remove('playing');
-      video.pause();
-    });
-  });
+    }
+    if (!('IntersectionObserver' in window)) {
+      videos.forEach(play);
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) play(e.target);
+        else e.target.pause();
+      });
+    }, { rootMargin: '200px 0px' });
+    videos.forEach(function (v) { io.observe(v); });
+  })();
 </script>
 
 </body>
